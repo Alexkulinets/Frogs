@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik+Distressed&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: #1f5768;
+  margin: 0;
+  color: white;
+  text-align: center;
+  min-width: 600px;
+}
+menu {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 24px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-top: 15px;
+}
+
+.frogimmg:nth-of-type(1){
+  height: 30px;
+  width: 30px;
+  margin-top: 2.1px;
+  margin-left: 2.5px;
+}
+menu details {
+  transform: rotate(-10deg);
+  margin-top: -10px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  background: rgb(0, 0, 0);
+  width: 150px;
+  color: rgba(63, 63, 63, 0.596);
+}
+
+.frogpng:nth-of-type(1){
+  margin-bottom: -5px;  
+  width: 25px;
+  height: 25px;
+
+}
+
+
+
+
+menu details summary {
+  background: rgb(122, 122, 122);
+  border: 5px solid rgb(255, 255, 255);
+  width: 150px;
+}
+menu details a {
+  text-decoration: none;
+  color: rgb(145, 145, 145);
+}
+menu details a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Стилі рівнів за допомогою псевдоселекторів та інших крутих комбінаторів */
+/* Загальні стилі */
+.plant {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.frogico {
+  height: 100px;
+  width: 100px;
+  margin: 25px 25px 0 25px;
+  
+  -webkit-animation: pulsing 0.85s infinite;
+  animation: pulsing 0.85s infinite;
+  
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+/* стилі рівнів*/
+/* 1 рівень */
+.plants:nth-of-type(1) {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(1) .plant:nth-child(1) {
+  background: green;
+}
+
+.frogs:nth-of-type(2) {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(2) .frog:nth-child(1) {
+  background: rgb(0, 125, 0);
+}
+
+/* 2 рівень */
+.plants:nth-of-type(3) {
+  display: flex;
+  position: absolute;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  justify-content: center;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(4) {
+  display: flex;
+  position: absolute;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  justify-content: space-around;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+
+
+.plants:nth-of-type(3) .plant:nth-child(1) {
+  background: green;
+}
+
+.frogs:nth-of-type(4) {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+.frogs:nth-of-type(5) {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+.frogs:nth-of-type(4) .frog:nth-child(1) {
+  background: green;
+}
+
+
+
+
+
+/* 3 рівень */
+.plants:nth-of-type(5) {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(6) {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(7) {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(4) .plant:nth-child(4) {
+  background: rgb(0, 128, 0);
+}
+
+.frogs:nth-of-type(5) {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+.frogs:nth-of-type(6) {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+.frogs:nth-of-type(7) {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+.frogs:nth-of-type(5) .frog:nth-child(5) {
+  background: green;
+}
+
+
+
+
+
+
+
+/* 4 рівень */
+.plants:nth-of-type(7) {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(8) {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(9) {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(8) .plant:nth-child(10) {
+  background: rgb(0, 128, 0);
+}
+
+.frogs:nth-of-type(8) {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+.frogs:nth-of-type(9) {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+.frogs:nth-of-type(10) {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+.frogs:nth-of-type(5) .frog:nth-child(5) {
+  background: green;
+}
+
+
+
+
+
+
+/* 5 рівень */
+.plants:nth-of-type(9) {
+  display: flex;
+  position: absolute;
+  align-items:flex-end;
+  justify-content: start;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(10) {
+  display: flex;
+  position: absolute;
+  align-items:flex-end;
+  justify-content: start;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.plants:nth-of-type(11) {
+  display: flex;
+  position: absolute;
+  align-items:flex-end;
+  justify-content: start;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(9) .plant:nth-child(11) {
+  background: rgb(0, 128, 0);
+}
+
+.frogs:nth-of-type(10) {
+  padding: 25px;
+  display: flex;
+  align-items:flex-end;
+  justify-content: start;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+.frogs:nth-of-type(11) {
+  padding: 25px;
+  display: flex;
+  align-items:flex-end;
+  justify-content: start;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+.frogs:nth-of-type(12) {
+  padding: 25px;
+  display: flex;
+  align-items:flex-end;
+  justify-content: start;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+.frogs:nth-of-type(10) .frog:nth-child(12) {
+  background: green;
+}
+
+
+
+
+
+/* 6 рівень */
+
+.plants:nth-of-type(11) {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(9) .plant:nth-child(11) {
+  background: rgb(0, 130, 0);
+}
+
+.frogs:nth-of-type(12) {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+.frogs:nth-of-type(10) .frog:nth-child(12) {
+  background: green;
+}
+
+
+/* 7 рівень */
+.plants:nth-of-type(11) {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(12) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(13) {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(9) .plant:nth-child(11) {
+  background: rgb(0, 130, 0);
+}
+
+
+
+
+.frogs:nth-of-type(12) {
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(13) {
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(14) {
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+.frogs:nth-of-type(10) .frog:nth-child(12) {
+  background: green;
+}
+
+
+/* 8 рівень */
+
+
+
+.plants:nth-of-type(13) {
+  display: flex;
+  position: absolute;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(14) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(15) {
+  display: flex;
+  position: absolute;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+
+
+
+.frogs:nth-of-type(15) {
+  padding: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(16) {
+  padding: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(17) {
+  padding: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+.frogs:nth-of-type(15) .frog:nth-child(17) {
+  background: green;
+}
+
+
+
+
+
+
+
+
+
+/* FROGS рівень */
+
+
+
+
+
+
+
+
+
+
+.frogs:nth-of-type(18) {
+padding: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh; /* viewport height */
+min-width: 600px;
+}
+
+
+
+
+.frogs:nth-of-type(15) .frog:nth-child(17) {
+background: green;
+}
