@@ -5,6 +5,41 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.favicon{
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+
 body {
   background: #1f5768;
   margin: 0;
@@ -28,6 +63,7 @@ menu {
   width: 30px;
   margin-top: 2.1px;
   margin-left: 2.5px;
+  
 }
 menu details {
   transform: rotate(-10deg);
@@ -44,7 +80,38 @@ menu details {
   margin-bottom: -5px;  
   width: 25px;
   height: 25px;
+  -webkit-animation: pulsing 0.85s infinite;
+  animation: pulsing 0.85s infinite;
+  
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
 
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }
 
 
@@ -61,7 +128,7 @@ menu details a {
 }
 menu details a:hover {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Стилі рівнів за допомогою псевдоселекторів та інших крутих комбінаторів */
@@ -69,12 +136,115 @@ menu details a:hover {
 .plant {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
+
+.planty {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+
+
 .frogico {
+  margin-bottom: 5px;
   height: 100px;
   width: 100px;
-  margin: 25px 25px 0 25px;
+  margin: 25px 25px 25px 25px;
+  
+  -webkit-animation: pulsing 0.85s infinite;
+  animation: pulsing 0.85s infinite;
+  
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+.frogicoy {
+  margin-bottom: 5px;
+  height: 100px;
+  display: flex;
+  width: 100px;
+  margin: 25px 25px 25px 25px;
+  align-self: flex-end;
+  align-items: flex-end;
+  
+  -webkit-animation: pulsing 0.85s infinite;
+  animation: pulsing 0.85s infinite;
+  
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1 , 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+
+.frocoy:nth-last-of-type(1){
+  margin-bottom: 5px;
+  height: 100px;
+  display: flex;
+  width: 100px;
+  margin: 25px 25px 25px 25px;
+  order: 3;
+  align-self: flex-end;
   
   -webkit-animation: pulsing 0.85s infinite;
   animation: pulsing 0.85s infinite;
@@ -111,6 +281,128 @@ menu details a:hover {
 }
 
 
+.planty:nth-of-type(2) {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  order: 3;
+align-self: flex-end;
+}
+
+
+
+
+
+.planty:nth-of-type(3) {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  order: 3;
+  flex-wrap: wrap;
+}
+
+
+.frocoy:nth-last-of-type(4){
+  margin-bottom: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100px;
+  margin: 25px 25px 25px 25px;
+  order: 3;
+  flex-wrap: wrap;
+  
+  -webkit-animation: pulsing 0.85s infinite;
+  animation: pulsing 0.85s infinite;
+  
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+.frocoy:nth-last-of-type(5){
+  margin-bottom: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100px;
+  margin: 25px 25px 25px 25px;
+  order: 3;
+  flex-wrap: wrap;
+  
+  -webkit-animation: pulsing 0.85s infinite;
+  animation: pulsing 0.85s infinite;
+  
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+.planty:nth-of-type(6) {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  order: 3;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 
 
 /* стилі рівнів*/
@@ -624,8 +916,6 @@ menu details a:hover {
 
 
 
-
-
 .frogs:nth-of-type(18) {
 padding: 25px;
 display: flex;
@@ -638,6 +928,536 @@ min-width: 600px;
 
 
 
-.frogs:nth-of-type(15) .frog:nth-child(17) {
-background: green;
+
+/* 9 рівень */
+
+
+
+.plants:nth-of-type(17) {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
 }
+
+.plants:nth-of-type(18) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+.plants:nth-of-type(19) {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+
+
+
+.frogs:nth-of-type(19) {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(20) {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+.frogs:nth-of-type(21) {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+.frogs:nth-of-type(19) .frog:nth-child(21) {
+  background: rgb(0, 129, 0);
+}
+
+/* 10 рівень */
+
+
+
+.plants:nth-of-type(21)  {
+  display: flex;
+  position: absolute;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(22)
+{
+  padding: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end; 
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+/* 11 рівень */
+
+
+
+.plants:nth-of-type(23)  {
+  display: flex;
+  margin-top: -35px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(24)
+{
+  margin-top: -35px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+/* Рівень 12*/
+
+.plants:nth-of-type(25)  {
+  display: flex;
+  position: absolute;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(26)
+{
+  padding: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+
+/* Рівень 13*/
+
+.plants:nth-of-type(25)  {
+  display: flex;
+  position: absolute;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(26)
+{
+  padding: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+/* Рівень 14*/
+
+.plants:nth-of-type(27)  {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(28)
+{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+/* Рівень 15*/
+
+.plants:nth-of-type(29)  {
+  display: flex;
+  position: absolute;
+  order: 1;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(30)
+{
+  padding: 25px;
+  display: flex;
+  order: 1;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+
+/* Рівень 16*/
+
+.plants:nth-of-type(31)  {
+  display: flex;
+  position: absolute;
+  order: -3;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(32)
+{
+  padding: 25px;
+  display: flex;
+  order: -3;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+/* Рівень 17*/
+
+.plants:nth-of-type(33) {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+
+
+.frogs:nth-of-type(34)
+{
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+
+/* Рівень 18*/
+
+.plants:nth-of-type(35)  {
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(36)
+{
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+/* Рівень 19*/
+
+.plants:nth-of-type(37)  {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(38)
+{
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+/* Рівень 20*/
+
+.plants:nth-of-type(39)  {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+
+
+.planty:nth-of-type(47)
+{
+  padding: 25px;
+  display: flex;
+  min-width: 600px;
+  height: 100vh;
+
+}
+.frogs:nth-of-type(40)
+{
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+/* Рівень 21*/
+
+.plants:nth-of-type(41)  {
+  display: flex;
+  position: absolute;
+  flex-flow: row nowrap;
+flex-wrap: wrap;
+flex-direction: column;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(42)
+{
+  padding: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+/* Рівень 22*/
+
+.plants:nth-of-type(43)  {
+  display: flex;
+  position: absolute;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(44)
+{
+  padding: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+/* Рівень 23*/
+
+.plants:nth-of-type(45)  {
+  display: flex;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+align-content: flex-start;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(46)
+{
+  padding: 25px;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+align-content: flex-start;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+/* Рівень 24*/
+
+.plants:nth-of-type(47)  {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+align-content: flex-end;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(48)
+{
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+align-content: flex-end;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+/* Рівень 25*/
+
+.plants:nth-of-type(49)  {
+  display: flex;
+  position: absolute;
+  flex-flow: column-reverse wrap-reverse;
+align-content: space-between;
+justify-content: center;
+  height: 100vh; /* viewport height */
+  background: #1f5768;
+  z-index: -1;
+  width: 100%;
+  min-width: 600px;
+  padding: 25px;
+}
+.frogs:nth-of-type(50)
+{
+  padding: 25px;
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+align-content: space-between;
+justify-content: center;
+  height: 100vh; /* viewport height */
+  min-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
